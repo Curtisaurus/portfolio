@@ -39,3 +39,12 @@ ol,
 ul {
   list-style: none;
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(110, 5, 5);
+}
