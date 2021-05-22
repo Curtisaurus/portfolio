@@ -1,90 +1,109 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Curtis Drullinger: A Portfolio</title>
+        <title>Curtis Drullinger</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
     <body>
         <!-- header banner with picture, name, and navbar -->
         <header>
-
-            <img src="./assets/images/CD selfie.jpeg" alt="An image of Curtis Drullinger who is ruggedly handsome"/>
-
-            <h1><p>Curtis</p>
-                <p>Drullinger</p>
-            </h1>
-
-            <nav>
-                <ul>
-                    <li><a href=#aboutMe>About Me</a></li>
-                    <li><a href=#appBlock>Projects</a></li>
-                    <li><a href=#contact>Contact</a></li>
-                </ul>
+            
+            <nav class="navbar fixed-top navbar-dark bg-dark">
+                <div class="container-fluid justify-content-end">
+                    <a class="navbar-brand" href=#aboutMe>About Me</a>
+                    <a class="navbar-brand" href=#appBlock>Projects</a>
+                    <a class="navbar-brand" href=#contact>Contact</a>
+                </div>
             </nav>
+
+            <div class='container-fluid text-center' id='nameplate'>
+                <h1>Curtis Drullinger</h1>
+            </div>
         </header>
 
         <!-- "About Me" section with brand statement -->
-        <section id=aboutMe>
-            <h2>About Me</h2>
-            <p>Full-stack web developer eager to apply critical thinking skills acquired during studies applied to a B.S. in Chemistry coupled with newly rooted skills in software engineering.
-                Possessing a certificate in Web Development from Michigan State University Coding Bootcamp, 
-                I am skilled in CSS, JavaScript, HTML, and Python programming.</p>
-                <br>
-            <p>An incredibly quick study with an efficient mindset, my goal is to create and streamline web-based applications while trimming the fat on any currently employed projects.  
-                I have a sharp eye for detail and excel at debugging and trouble-shooting while to produce helpful and constructive criticism of work-in-progress systems.
-                I am excited to apply my knowledge and skills to a new set of projects to increase their overall performance and propel them into their most efficient working states.</p>
+        <section class='container-fluid headroom' id='aboutMe'>
+            <div class='row'>
+                <div class='col-sm-3 blockTitle'>About</div>
+                <div class='col-sm-9 clearfix'>
+                    <img src="./assets/images/curtis-working.jpg" class="col-sm-4 float-md-end mb-3 ms-md-3 selfie" alt="a professional photo of Curtis Drullinger">
+                    <p>Full-stack web developer eager to apply critical thinking skills acquired during studies applied to a B.S. in Chemistry coupled with newly rooted skills in software engineering.
+                        Possessing a certificate in Web Development from Michigan State University Coding Bootcamp, 
+                        I am skilled in CSS, JavaScript (with ES6 standard), HTML, Node.js</p>
+                        <br>
+                    <p>An incredibly quick study with an efficient mindset, my goal is to create and streamline web-based applications while trimming the fat on any currently employed projects.  
+                        I have a sharp eye for detail and excel at debugging and trouble-shooting while to produce helpful and constructive criticism of work-in-progress systems.
+                        I am excited to apply my knowledge and skills to a new set of projects to increase their overall performance and propel them into their most efficient working states.</p>  
+                </div>
+            </div>
         </section>
 
         <!-- project section with images and links to deployed projects-->
-        <section id=appBlock>
-            <a href=# id=firstApp>
-                <figure>
-                    <img src="./assets/images/cat.jpg"/>
-                    <figcaption>Project #1</figcaption>
-                </figure>
-            </a>
-
-            <a href=# id=otherApps>
-                <figure>
-                    <img src="./assets/images/cat.jpg"/>
-                    <figcaption>Project #2</figcaption>
-                </figure>
-            </a>
-
-            <a href=# id=otherApps>
-                <figure>
-                    <img src="./assets/images/cat.jpg"/>
-                    <figcaption>Project #3</figcaption>
-                </figure>
-            </a>
-
-            <a href=# id=otherApps>
-                <figure>
-                    <img src="./assets/images/cat.jpg"/>
-                    <figcaption>Project #4</figcaption>
-                </figure>
-            </a>
-
-            <a href=# id=otherApps>
-                <figure>
-                    <img src="./assets/images/cat.jpg"/>
-                    <figcaption>Project #5</figcaption>
-                </figure>
-            </a>
+        <section id='appBlock' class='container-fluid headroom'>
+            <!-- wraps the entire project section in order to have the side-set title column -->
+            <div class='row'>
+                <div class='col-sm-3 blockTitle'>Apps</div>
+                <div class='col-sm-9'>
+                    <!-- first and largest project card -->
+                    <div class='row'>
+                        <div class='col'>
+                            <div class="card bg-dark text-white" id="sipProject">
+                                <img src="./assets/images/sip.png" class="card-img-top" alt="live SIP page featuring bourbon cocktails">
+                                <div class="card-body">
+                                    <h4 class="card-title">S.I.P.</h5>
+                                    <p class="card-text">The Spirit Indexing Program can help you find cocktail recipes and inspiration for your available spirits, or find a bartender than can make some for you.</p>
+                                    <a href="https://github.com/danshoup/build-a-cocktail" class="card-link">GitHub Repository</a>
+                                    <a href="https://danshoup.github.io/build-a-cocktail/" class="card-link">Live Application</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class='row'>
+                        <div class='col-sm-6'>
+                            <div class="card bg-dark text-white">
+                                <img src="./assets/images/weather.png" class="card-img-top" alt="live SIP page featuring bourbon cocktails">
+                                <div class="card-body">
+                                    <h4 class="card-title">Weather Dashboard</h5>
+                                    <p class="card-text">A simplified weather dashboard giving users the current conditions and 5-day forecast of a searchable city.  Utilises OpenWeather Api.</p>
+                                    <a href="https://github.com/Curtisaurus/weather-app" class="card-link">GitHub Repository</a>
+                                    <a href="https://curtisaurus.github.io/weather-app/" class="card-link">Live Application</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-sm-6'>
+                            <div class="card bg-dark text-white">
+                                <img src="./assets/images/sip.png" class="card-img-top" alt="live SIP page featuring bourbon cocktails">
+                                <div class="card-body">
+                                    <h4 class="card-title">S.I.P.</h5>
+                                    <p class="card-text">The Spirit Indexing Program can help you find cocktail recipes and inspiration for your available spirits, or find a bartender than can make some for you.</p>
+                                    <a href="#" class="card-link">GitHub Repository</a>
+                                    <a href="#" class="card-link">Live Application</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <footer id=contact>
-            <h3>Contact Me</h3>
-            <ul>
-                <li><a href="mailto: ccdrullinger@gmail.com">CCDrullinger@gmail.com</a></li>
-                <li><a href="https://github.com/Curtisaurus">Curtisaurus @ GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/curtis-drullinger/">LinkedIn</a></li>
-            </ul>
-        </footer>
+        <footer id='contact' class='container-fluid headroom'>
+            <div class='row'>
+                <div class='col-sm-3 blockTitle'>Contact</div>
+                <div class='col-sm-9 navbar justify-content-start'>
+                    <a class='navbar-brand contact-link' href="mailto: ccdrullinger@gmail.com">CCDrullinger@gmail.com</a>
+                    <a class='navbar-brand contact-link' href="https://github.com/Curtisaurus">Curtisaurus @ GitHub</a>
+                    <a class='navbar-brand contact-link' href="https://www.linkedin.com/in/curtis-drullinger/">LinkedIn</a>
+                    <a class='navbar-brand contact-link' href="#">Resumé</a>  
+                </div>
+            </div>
+        </footer>       
 
     </body>
-</html>
+</html> 
