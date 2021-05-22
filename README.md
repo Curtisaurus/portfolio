@@ -1,6 +1,4 @@
 # Portfolio
-Developer portfolio design draft, Section 2 homework
+This is my developer portfolio which will grow and evolve as I do in my career as a developer.  Please peruse the apps and repositories I've had the pleasure to work on.  Thank you for visiting!
 
-This repository will be used to build a web application designed as a draft for a professional web developer portfolio.  It will utilise CSS techniques learned in Week 2 of the MSU Web Developer bootcamp cohort.
-
-The base design of the portfolio page includes a working navigation bar; sections providing details about the developer, links to their projects (with images); and be scalable to different screen sizes.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
